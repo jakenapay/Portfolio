@@ -1,4 +1,4 @@
-To make the 'contact me' works and send to owner you should run it in this link:
+In order to message me via this website file, visit this link: 
 
-http://jakenapay.rf.gd
+https://jake-napay.github.io
 
