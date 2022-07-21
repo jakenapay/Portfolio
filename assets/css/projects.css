@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap');
+
+@keyframes load {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+:root {
+    --primary: #4E9F3D;
+    --dark: #191A19;
+    --light: #D8E9A8;
+    --shade: #1E5128;
+    --p: 14px;
+    --title: 22px;
+    --header: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    animation: load 1s;
+}
+
+body {
+    background-color: #fff;
+    /* padding-top: 150px; */
+}
+
+.main-container {
+    background-color: var(--shade);
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 956px;
+}
+
+
+.bold {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px 20px 50px;
+}
+
+.light-text {
+    color: #fff;
+}
+
+.off-message {
+    color: #fff;
+    padding: 10px 10px;
+    margin: 10px;
+    text-align: unset;
+}
+
+hr {
+    color: #fff;
+    background-color: #fff;
+}
+
+.blink {
+    animation-name: cmd-line;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.main-container img, .main-container .img-fluid {
+    cursor: pointer;
+}
+
+.space-top {
+    padding-top: 55px;
+}
+
+@keyframes cmd-line {
+    0% {
+        color: var(--shade);
+    }
+
+    25% {
+        color: #fff;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    75% {
+        color: #fff;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+.main-container .img-fluid, .main-container img{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container .img-container {
+    background-image: url("assets/img/project1.png");
+}
+
+.main-container .box {
+    max-width: 478px;
+    margin: 0;
+    padding: 0;
+}
+
+/* tablets */
+@media (min-width: 768px) {
+    
+    .last-title {
+        font-size: 2.5rem;
+    }
+
+    .off-message {
+        text-align: center;
+    }
+
+    .space-top {
+        padding-top: 65px;
+    }
+}
+
+/* desktops */
+@media (min-width: 992px) {
+    
+    .bold {
+        font-size: 4rem !important;
+    }
+
+    .last-title {
+        font-size: 3.5rem;
+    }
+
+    .space-top {
+        padding-top: 65px;
+    }
+}
