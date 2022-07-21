@@ -80,10 +80,12 @@ hr {
 
 .main-container img, .main-container .img-fluid {
     cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    /* display: block; */
 }
 
 .space-top {
-    padding-top: 55px;
+    padding-top: 55px;  
 }
 
 @keyframes cmd-line {
@@ -113,15 +115,29 @@ hr {
     padding: 0;
 }
 
-.main-container .img-container {
+/* .main-container .img-container {
     background-image: url("assets/img/project1.png");
-}
+} */
 
 .main-container .box {
     max-width: 478px;
     margin: 0;
     padding: 0;
 }
+
+/* image hover effects */
+/* updated @ 072122 */
+
+.main-container .img-container {
+    overflow: hidden;
+}
+
+.main-container .img-container:hover img {
+    transform: scale(1.2);
+}
+
+
+
 
 /* tablets */
 @media (min-width: 768px) {
